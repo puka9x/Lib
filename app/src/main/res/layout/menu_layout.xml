@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#77333333">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/layoutsuggest"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="10dp"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:text="@string/favorite_app"
+                android:textColor="@color/colortextonmainmenu"
+                android:textSize="22sp" />
+
+            <RelativeLayout
+
+                android:id="@+id/layoutsuggest"
+                android:layout_width="match_parent"
+                android:layout_height="270dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="10dp"
+                android:background="#00ffffff"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/tvtitlerelate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="10dp"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:text=""
+                    android:textColor="@color/colortextonmainmenu"
+                    android:textSize="22sp" />
+
+                <com.fpt.menulibs.ui.HorizontalListView
+                    android:id="@+id/listviewsuggest"
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp"
+                    android:layout_below="@+id/tvtitlerelate"
+                    android:layout_marginTop="10dp">
+
+                </com.fpt.menulibs.ui.HorizontalListView>
+
+                <com.fpt.menulibs.ui.HorizontalListView
+                    android:id="@+id/listviewsuggesttv"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:layout_below="@+id/tvtitlerelate"
+                    android:layout_marginTop="10dp"
+                    android:visibility="gone">
+
+                </com.fpt.menulibs.ui.HorizontalListView>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layoutlistview"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView"
+                android:layout_marginTop="10dp"
+                android:background="#00ffffff">
+
+                <com.fpt.menulibs.ui.HorizontalListView
+                    android:id="@+id/listviewitem"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:focusable="false"
+                    android:focusableInTouchMode="true">
+
+                </com.fpt.menulibs.ui.HorizontalListView>
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/layoutlistview"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="10dp"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:text="@string/other_app"
+                android:textColor="@color/colortextonmainmenu"
+                android:textSize="22sp" />
+
+            <RelativeLayout
+
+                android:id="@+id/layoutother"
+                android:layout_width="match_parent"
+                android:layout_height="380dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/textView3"
+                android:layout_marginTop="10dp"
+                android:background="#00ffffff"
+                android:visibility="visible">
+
+                <com.fpt.menulibs.ui.HorizontalListView
+                    android:id="@+id/listviewohter1"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp">
+
+                </com.fpt.menulibs.ui.HorizontalListView>
+
+                <com.fpt.menulibs.ui.HorizontalListView
+                    android:id="@+id/listviewohter2"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/listviewohter1">
+
+                </com.fpt.menulibs.ui.HorizontalListView>
+
+                <com.fpt.menulibs.ui.HorizontalListView
+
+                    android:id="@+id/listviewohter3"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:layout_below="@+id/listviewohter2">
+
+                </com.fpt.menulibs.ui.HorizontalListView>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

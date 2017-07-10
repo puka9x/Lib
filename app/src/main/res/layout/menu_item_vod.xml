@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="160dp"
+        android:layout_height="240dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="20dp"
+        android:background="#00ffffff">
+
+
+        <RelativeLayout
+            android:id="@+id/layouttv"
+            android:layout_width="160dp"
+            android:layout_height="200dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/borderitemonmenu"
+            android:focusable="true">
+
+            <ImageView
+                android:id="@+id/imagemenu"
+                android:layout_width="150dp"
+                android:layout_height="190dp"
+                android:layout_centerInParent="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/television" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tvname"
+            android:lines="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layouttv"
+            android:layout_centerHorizontal="true"
+            android:text="Truyền Hình"
+            android:textColor="#ffffff"
+            android:textSize="15sp" />
+    </RelativeLayout>
+</RelativeLayout>
